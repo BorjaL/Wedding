@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>Help Document File</title>
+<!-- Framework CSS -->
+<link rel="stylesheet" href="assets/css/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="assets/css/print.css" type="text/css" media="print">
+<!--[if lt IE 8]><link rel="stylesheet" href="assets/css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<script type="text/javascript" src="assets/js/shCore.js"></script>
+<script type="text/javascript" src="assets/js/shBrushCSharp.js"></script>
+<link type="text/css" rel="stylesheet" href="assets/css/shCore.css"/>
+<link type="text/css" rel="stylesheet" href="assets/css/shThemeDefault.css"/>
+<script type="text/javascript">
+		SyntaxHighlighter.config.clipboardSwf = 'scripts/clipboard.swf';
+		SyntaxHighlighter.all();
+	</script>
+<link href="css/readme-css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+<script language="JavaScript">
+$(document).ready(function() {
+
+    $(".tabs .tab[id^=tab_menu]").click(function() {
+        var curMenu=$(this);
+        $(".tabs .tab[id^=tab_menu]").removeClass("selected");
+        curMenu.addClass("selected");
+        var index=curMenu.attr("id").split("tab_menu_")[1];
+        $(".curvedContainer .tabcontent").css("display","none");
+        $(".curvedContainer #tab_content_"+index).css("display","block");
+    });
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div class="theme_name">
+	<h1>Laura & Smith Wedding HTML5 Template</h1>
+    <title>Laura & Smith Wedding HTML5 Template</title>
+    <p class="prepend-top"> <strong> Created Date: 15/3/2013 By: Ram </strong><br>
+        Please login in to themeforest and send an email from my profile page using form at right side <a href="http://themeforest.net/user/kayapati"> http://themeforest.net/user/kayapati</a> </p>
+</div>
+<div class="tabscontainer">
+    <ul class="tabs">
+        <li class="tab selected first" id="tab_menu_1"> <a href="#" class="link"> Theme Features </a> </li>
+         <li class="tab" id="tab_menu_2"> <a href="#" class="link"> HTML Structure </a> </li>
+        <li class="tab" id="tab_menu_3"> <a href="#" class="link"> Adding Logo </a> </li>
+        <li class="tab" id="tab_menu_5"> <a href="#" class="link"> Adding Gallery Content </a> </li>
+        <li class="tab" id="tab_menu_8"> <a href="#" class="link"> Adding Email ID in Contact page </a> </li>
+        <li class="tab" id="tab_menu_9"> <a href="#" class="link"> CSS Files </a> </li>
+        <li class="tab" id="tab_menu_11"> <a href="#" class="link"> Jquery Files </a> </li>
+        <li class="tab" id="tab_menu_12"> <a href="#" class="link"> PSD Files</a> </li>
+        <li class="tab last" id="tab_menu_13"> <a href="#" class="link"> Sources and Credits </a> </li>
+    </ul>
+    
+    <div class="curvedContainer">
+    
+   			  <div class="tabcontent" id="tab_content_1" style="display:block">
+                <h2> Theme Features</h2>
+                <ol>
+                	<li>HTML5 Website</li>
+                    <li>Responsive Template</li>
+                    <li>Single Page Loads Website</li>
+                    <li>Gallery item's</li>
+                    <li>Ready to use Contact Page, you just need to add your email ID</li>
+                    <li>Best suited for Wedding, Portfolio, Fashion, spa, Shops and Information web sites</li>
+                </ol>
+               <p><img src="images/screenshot.jpg" alt="Screen shot" /> </p>
+            </div>
+            
+            
+        <div class="tabcontent" id="tab_content_2" >
+            <h2>HTML Structure</h2>
+            <p>This theme was built using <strong>Bootstrap Framework</strong>, without tables.</p>
+            
+            <p> Menu section is placed in 
+            	<pre class="brush: c-sharp;">
+                <div id="myslidemenu" class="jqueryslidemenu clearfix">
+                <ul id="nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a>
+                        <ul>
+                            <li><a href="#">Sub Menu</a></li>
+                            <li><a href="#">Sub Menu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#wedding">Wedding Party</a></li>
+                    <li><a href="#venue">Venue</a></li>
+                </ul>
+                </div>
+                    
+
+                        </pre>
+                        
+                       
+                       <p> The Pages loads  <strong>"id"</strong>  </p>
+                        
+                        <pre class="brush: c-sharp;">
+                        <section id="home">
+                        	Content Goes Here........
+                        </section>
+                        <section id="about">
+                        <div class="page">
+                        	Content Goes Here........
+                        </div>
+                        </section>
+                        <section id="gallery">
+                        <div class="page">
+                        	Content Goes Here........
+                        </div>
+                        </section>
+                        <section id="wedding">
+                        <div class="page">
+                        	Content Goes Here........
+                        </div>
+                        </section>
+                        <section id="venue">
+                        <div class="page">
+                        	Content Goes Here........
+                        </div>
+                        </section>	
+                        </pre>
+                        
+                                                                   
+                        
+            
+        </div>
+        
+        <div class="tabcontent" id="tab_content_3">
+            <h2> Adding your logo</h2>
+                 <p><img src="images/logo-setup.jpg" alt="Adding Logo" /> </p>
+            <p> Theme comes with dummy logo ( Laura & Smith ) which can be replaced easily.</p>
+            <p> Open logo.png and enter your company or business name and save it as a logo.png in <strong>images</strong> folder. </p>
+            <p> If you already exist the logo, then make sure your logo sizes to be 225px wide and 55px height, this is not compulsory but try to use these sizes to ensure the look and feel of your layout</p>
+            <p> Place your logo in <strong>images</strong> folder with the name called logo.png , now your logo will be displayed automatically on the top left of the page.</p>
+       
+        </div>
+        
+        
+        
+            
+            <div class="tabcontent" id="tab_content_5">
+                <h2> Adding Gallery Content</h2>
+                <p> <img src="images/gallery.jpg" alt="Gallery items"  /></p>
+                
+                <pre class="brush: c-sharp;">
+                   <ul class="gallery_slider">
+                        <li>
+                            <div class="one_third">
+                                <div class="imageOuter">
+                                    <a rel="group" href="images/gallery_img_17.jpg" title="Lorem ipsum dolor sit amet">
+                                        <span class="roll" ></span>
+                                        <img src="images/gallery_img_17.jpg" alt="img" class="img_border" />	
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="one_third">
+                                <div class="imageOuter">
+                                    <a rel="group" href="images/gallery_img_18.jpg" title="Lorem ipsum dolor sit amet">
+                                        <span class="roll" ></span>
+                                        <img src="images/gallery_img_18.jpg" alt="img" class="img_border" />	
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="one_third_last">
+                                <div class="imageOuter">
+                                    <a rel="group" href="images/gallery_img_19.jpg" title="Lorem ipsum dolor sit amet">
+                                        <span class="roll" ></span>
+                                        <img src="images/gallery_img_19.jpg" alt="img" class="img_border" />	
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="vspace">&nbsp;</div>
+                            <div class="one_third">
+                                <div class="imageOuter">
+                                    <a rel="group" href="images/gallery_img_1.jpg" title="Lorem ipsum dolor sit amet">
+                                        <span class="roll" ></span>
+                                        <img src="images/gallery_img_1.jpg" alt="img" class="img_border" />	
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="one_third">
+                                <div class="imageOuter">
+                                    <a rel="group" href="images/gallery_img_2.jpg" title="Lorem ipsum dolor sit amet">
+                                        <span class="roll" ></span>
+                                        <img src="images/gallery_img_2.jpg" alt="img" class="img_border" />	
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="one_third_last">
+                                <div class="imageOuter">
+                                    <a rel="group" href="images/gallery_img_3.jpg" title="Lorem ipsum dolor sit amet">
+                                        <span class="roll" ></span>
+                                        <img src="images/gallery_img_3.jpg" alt="img" class="img_border" />	
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="vspace">&nbsp;</div>
+                            <div class="one_third">
+                                <div class="imageOuter">
+                                    <a rel="group" href="images/gallery_img_4.jpg" title="Lorem ipsum dolor sit amet">
+                                        <span class="roll" ></span>
+                                        <img src="images/gallery_img_4.jpg" alt="img" class="img_border" />	
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="one_third">
+                                <div class="imageOuter">
+                                    <a rel="group" href="images/gallery_img_5.jpg" title="Lorem ipsum dolor sit amet">
+                                        <span class="roll" ></span>
+                                        <img src="images/gallery_img_5.jpg" alt="img" class="img_border" />	
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="one_third_last">
+                                <div class="imageOuter">
+                                    <a rel="group" href="images/gallery_img_6.jpg" title="Lorem ipsum dolor sit amet">
+                                        <span class="roll" ></span>
+                                        <img src="images/gallery_img_6.jpg" alt="img" class="img_border" />	
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="vspace clear">&nbsp;</div>
+                        </li>
+                        <li>
+                            <div class="one_third">
+                                <div class="imageOuter">
+                                    <a rel="group" href="images/gallery_img_7.jpg" title="Lorem ipsum dolor sit amet">
+                                        <span class="roll" ></span>
+                                        <img src="images/gallery_img_7.jpg" alt="img" class="img_border" />	
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="one_third">
+                                <div class="imageOuter">
+                                    <a rel="group" href="images/gallery_img_8.jpg" title="Lorem ipsum dolor sit amet">
+                                        <span class="roll" ></span>
+                                        <img src="images/gallery_img_8.jpg" alt="img" class="img_border" />	
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="one_third_last">
+                                <div class="imageOuter">
+                                    <a rel="group" href="images/gallery_img_9.jpg" title="Lorem ipsum dolor sit amet">
+                                        <span class="roll" ></span>
+                                        <img src="images/gallery_img_9.jpg" alt="img" class="img_border" />	
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="vspace">&nbsp;</div>
+                            <div class="one_third">
+                                <div class="imageOuter">
+                                    <a rel="group" href="images/gallery_img_10.jpg" title="Lorem ipsum dolor sit amet">
+                                        <span class="roll" ></span>
+                                        <img src="images/gallery_img_10.jpg" alt="img" class="img_border" />	
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="one_third">
+                                <div class="imageOuter">
+                                    <a rel="group" href="images/gallery_img_11.jpg" title="Lorem ipsum dolor sit amet">
+                                        <span class="roll" ></span>
+                                        <img src="images/gallery_img_11.jpg" alt="img" class="img_border" />	
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="one_third_last">
+                                <div class="imageOuter">
+                                    <a rel="group" href="images/gallery_img_12.jpg" title="Lorem ipsum dolor sit amet">
+                                        <span class="roll" ></span>
+                                        <img src="images/gallery_img_12.jpg" alt="img" class="img_border" />	
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="vspace">&nbsp;</div>
+                            <div class="one_third">
+                                <div class="imageOuter">
+                                    <a rel="group" href="images/gallery_img_13.jpg" title="Lorem ipsum dolor sit amet">
+                                        <span class="roll" ></span>
+                                        <img src="images/gallery_img_13.jpg" alt="img" class="img_border" />	
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="one_third">
+                                <div class="imageOuter">
+                                    <a rel="group" href="images/gallery_img_14.jpg" title="Lorem ipsum dolor sit amet">
+                                        <span class="roll" ></span>
+                                        <img src="images/gallery_img_14.jpg" alt="img" class="img_border" />	
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="one_third_last">
+                                <div class="imageOuter">
+                                    <a rel="group" href="images/gallery_img_15.jpg" title="Lorem ipsum dolor sit amet">
+                                        <span class="roll" ></span>
+                                        <img src="images/gallery_img_15.jpg" alt="img" class="img_border" />	
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="vspace clear">&nbsp;</div>
+                        </li>
+                    </ul>
+                </pre>
+                
+                <p> Replace the above images and content as per your needs.</p>
+              
+       		</div>
+         
+            <div class="tabcontent" id="tab_content_8">
+                <h2> Adding an Email ID in Contact page</h2>
+                <p><img src="images/venue.jpg" alt="img" /></p>
+                <p> Template comes with ready to use contact form, what you have to do is, just adding your email id to recieve emails from your website.</p>
+                <p> open sendEmail.php: and find <strong>youremailid@domain.com</strong> and replace it with your email id.</p>
+            </div>
+            
+            <div class="tabcontent" id="tab_content_9">
+                <h2> CSS Files</h2>
+                <p>I'm using 4 CSS files mainly in this theme, the others are supporting files. </p>
+	
+                <ol>
+                    <li><strong>layout.css:</strong> contains all DIVs which construct the layout prototype, using div class="one_half", div class="one_half_last" div class="one_third" and div class="one_third_last" etc.</li>
+                    <li><strong>jqueryslidemenu.css:</strong> is used for top <strong>dropdown menu</strong>, if you would like to make changes to the drop down menu links, open jqueryslidemenu.css and find bellow code.
+                        <pre class="brush: c-sharp;"> 
+                    	.jqueryslidemenu {
+                            position:relative;
+                            z-index:99;
+                        }
+                        .jqueryslidemenu ul {
+                            margin: 0;
+                            padding: 0;
+                            list-style-type: none;
+                        }
+                    </pre>
+                    </li>
+                    <li><strong>jquery.bxslider.css </strong> are used for Gallery slider.</li>
+                   	<li><strong>style.css:</strong> contains all of the specific stylings for the page skin or look and feel.
+                    The file is separated into several sections like the bellow as sample:  </p>
+                     <pre class="brush: c-sharp;"> 
+                        body {
+                            color: #EBEBEB;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 13px;
+                            line-height: 18px;
+                            margin:0px;
+                            padding:0px;
+                        }
+                        p, ul, ol, dl, table, fieldset, blockquote, pre, code {
+                        }
+              		 </pre>
+                
+                
+				</li>
+                   </ol>
+            </div>
+            
+             
+            
+            
+            
+            <div class="tabcontent" id="tab_content_11">
+                <h2> Jquery Files</h2>
+               <p>This theme imports 5 Javascript files mainly, others are supporting files.</p>
+                    <ol>
+                        <li><strong>jquery.min:</strong> is a Javascript library that greatly reduces the amount of code that you must write.</li>
+                        <li><strong>jqueryslidemenu:</strong> is used for menu</li>
+                        <li><strong>jquery.localscroll-1.2.7-min & jquery.scrollTo-1.4.2-min:</strong> is used for Page Scroll</li>
+                        <li><strong>jquery.bxslider:</strong> is used for Gallery Page</li>
+                        <li><strong>contact.js:</strong> used for Venue page.</li>
+                       
+                    </ol>
+                
+            </div>
+            
+            <div class="tabcontent" id="tab_content_12">
+                <h2>PSD Files</h2>
+                <p> This template is created using complete CSS & DIVs, so mostly you do not need complete PSD file</p>
+                <p>I've included few PSD element files which are mainly useful for customization:</p>
+                <ol>
+                     <li><strong>logo.psd</strong> which is a Logo</li>
+                     <li><strong>bx-pager.psd</strong> which is a Logo</li>                        
+                </ol>
+                
+            </div>
+            
+            
+            <div class="tabcontent" id="tab_content_13">
+                <h2> Sources and Credits </h2>
+               <p>I've used the following images, icons or other files as listed.
+                <ol>
+                    <li>A few images from http://www.flickr.com/creative commons/</li>
+                    <li>Jquery</li>                 
+                    <li>Nikebetterworld.com jQuery Parallax Effect</li>
+                    <li>Bx Slider</li>
+                    <li>Syntax hi light code for readme file, from http://alexgorbatchev.com/wiki/SyntaxHighlighter</li>
+                </ol>
+                
+            </div>
+        
+    </div>
+</div>
+</div>
+</body>
+</html>
