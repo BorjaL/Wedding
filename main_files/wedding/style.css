@@ -244,8 +244,8 @@ span.decor_bottom {
 #gallery .page_title {
 	font-size: 35px;
 	font-weight: 700;
-	color: #CCCCCC;
-	text-shadow: 3px 3px #666666;
+	color: #656464;
+	text-shadow: 3px 3px #CCCCCC;
 	line-height:50px;
 }
 #gallery .vspace {
@@ -253,14 +253,19 @@ span.decor_bottom {
 }
 #gallery .page h2 {
 	border-top:1px solid #d0cec8;
-	border-bottom:1px solid #d0cec8;
 	line-height:40px;
 	padding:28px 0px;
-	color:#CCCCCC;
-	text-shadow:2px 0 #666666;
+	color:#656464;
+	text-shadow: 3px 3px #CCCCCC;
 }
-#gallery h2 {
-	margin-bottom:95px;
+
+#gallery .photosHotel {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#gallery p {
+	color:#656464;
 }
 
 .bx-wrapper img{
@@ -269,6 +274,7 @@ background-color:#c9c4b6;
 
 .imageOuter {
 	position:relative;
+	margin-bottom: 10px;
 }
 span.roll {
 	background:url(images/hover_icon.png) center center no-repeat #000;
